@@ -5,8 +5,6 @@
 # =============================================================================
 
 # ---------- Stage 1: build - biên dịch & đóng gói bằng Gradle + JDK 21 ----------
-#Base image có Gradle +JDK21(ví dụ gradel:8.14-jdk21-alpine) đặt tên là AS Build
-#Copy build.gradle + settings.gradle trước, tải dependency để tận dụng cache, sau đó copy src/ và chạy thử bootJar -x test
 
 # Spring Boot 4 yêu cầu Gradle >= 8.14
 FROM gradle:8.14-jdk21-alpine AS build

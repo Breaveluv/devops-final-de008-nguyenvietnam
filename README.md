@@ -68,6 +68,6 @@ Phần **sinh viên phải làm** (xem đề thi):
 ```bash
 docker compose --env-file student.env up -d --build
 docker compose --env-file student.env ps
-curl http://localhost:<APP_PORT>/api/books
+curl http://localhost:8080/api/books
 docker compose --env-file student.env down
 ```
